@@ -1,0 +1,406 @@
+$container_one_color: hsl(31, 77%, 52%);
+$container_two_color: hsl(184, 100%, 22%);
+$container_three_color: hsl(179, 100%, 13%);
+$paragraph_color: hsla(0, 0%, 100%, 0.75);
+$heading_buttons_backgroundcolor: hsl(0, 0%, 95%);
+$min_width: 375px;
+$max_width: 1000px;
+
+
+@font-face {
+    font-family: Lexenca-Deca;
+    src: url(fonts/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+    font-family: Big_Shoulders_Display;
+    src: url(fonts/BigShouldersInlineDisplay-SemiBold.ttf);
+}
+
+body {
+    background-color: $heading_buttons_backgroundcolor;
+
+
+    .maincontainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+
+        .container_one, .container_two, .container_three {
+            width: 100%;
+            padding: 1.9em;
+        }
+        .container_one {
+            background-color: $container_one_color;
+            border-top-left-radius: 0.5em;
+            border-bottom-left-radius: 0.5em;
+
+            h1 {
+                color: $heading_buttons_backgroundcolor;
+                margin-bottom: 20%;
+                font-family: Big_Shoulders_Display;
+                font-size: 2rem;
+            } 
+
+            p {
+                color: $paragraph_color; 
+                line-height: 1.5;
+                min-height: 5rem;
+                width: 13em;
+                max-height: 15rem;
+                font-family: Lexenca-Deca;
+            }
+
+            #button_one {
+                color: $container_one_color;
+                margin-top: 30%;
+
+                &:active {
+                    background-color: $container_one_color;
+                    color: $paragraph_color;
+                }
+            }
+        }
+
+
+        .container_two {
+            background-color: $container_two_color;
+
+
+            h1 {
+                color: $heading_buttons_backgroundcolor;
+                margin-bottom: 20%;
+                font-family: Big_Shoulders_Display;
+                font-size: 2rem;
+            }
+
+            p {
+                color: $paragraph_color;
+                line-height: 1.5;
+                min-height: 5rem;
+                width: 13em;
+                max-height: 15rem;
+                font-family: Lexenca-Deca;
+            }
+
+            #button_two {
+                color: $container_two_color;
+                margin-top: 30%;
+
+
+                &:active {
+                    background-color: $container_two_color;
+                    color: $paragraph_color;
+                }
+            }
+        }
+
+
+        .container_three {
+            background-color: $container_three_color;
+            border-top-right-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+
+            h1 {
+                color: $heading_buttons_backgroundcolor;
+                margin-bottom: 20%;
+                font-family: Big_Shoulders_Display;
+                font-size: 2rem;
+            }
+
+            p {
+                color: $paragraph_color;
+                line-height: 1.5;
+                min-height: 5rem;
+                width: 14em;
+                max-height: 14rem;
+                font-family: Lexenca-Deca;
+            }
+
+            #button_three {
+                color: $container_three_color;
+                margin-top: 27%;
+
+                &:active {
+                    background-color: $container_three_color;
+                    color: $paragraph_color;
+                }
+            }
+        }
+    }
+
+    button {
+        padding: 0.9em;
+        border-radius: 1.5em;
+        border: none;
+        text-align: center;
+        background-color: $heading_buttons_backgroundcolor;
+        width: 70%;
+        cursor: pointer;
+        font-family: Lexenca-Deca;
+
+        &:active {
+            border: 2px solid #{$heading_buttons_backgroundcolor};
+            color: #{$paragraph_color};
+        }
+    }
+
+    header, footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $min_width) and (max-width: $max_width) {
+    body {
+        background-color: $heading_buttons_backgroundcolor;
+    
+    
+        .maincontainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: row;
+    
+            .container_one, .container_two, .container_three {
+                width: 100%;
+                padding: 1.9em;
+            }
+            .container_one {
+                background-color: $container_one_color;
+                border-top-left-radius: 0.5em;
+                border-bottom-left-radius: 0.5em;
+    
+                h1 {
+                    color: $heading_buttons_backgroundcolor;
+                    margin-bottom: 20%;
+                    font-family: Big_Shoulders_Display;
+                    font-size: 2rem;
+                } 
+    
+                p {
+                    color: $paragraph_color; 
+                    line-height: 1.5;
+                    min-height: 5rem;
+                    width: 13em;
+                    max-height: 15rem;
+                    font-family: Lexenca-Deca;
+                }
+    
+                #button_one {
+                    color: $container_one_color;
+                    margin-top: 30%;
+    
+                    &:active {
+                        background-color: $container_one_color;
+                        color: $paragraph_color;
+                    }
+                }
+            }
+    
+    
+            .container_two {
+                background-color: $container_two_color;
+    
+    
+                h1 {
+                    color: $heading_buttons_backgroundcolor;
+                    margin-bottom: 20%;
+                    font-family: Big_Shoulders_Display;
+                    font-size: 2rem;
+                }
+    
+                p {
+                    color: $paragraph_color;
+                    line-height: 1.5;
+                    min-height: 5rem;
+                    width: 13em;
+                    max-height: 15rem;
+                    font-family: Lexenca-Deca;
+                }
+    
+                #button_two {
+                    color: $container_two_color;
+                    margin-top: 30%;
+    
+    
+                    &:active {
+                        background-color: $container_two_color;
+                        color: $paragraph_color;
+                    }
+                }
+            }
+    
+    
+            .container_three {
+                background-color: $container_three_color;
+                border-top-right-radius: 0.5em;
+                border-bottom-right-radius: 0.5em;
+    
+                h1 {
+                    color: $heading_buttons_backgroundcolor;
+                    margin-bottom: 20%;
+                    font-family: Big_Shoulders_Display;
+                    font-size: 2rem;
+                }
+    
+                p {
+                    color: $paragraph_color;
+                    line-height: 1.5;
+                    min-height: 5rem;
+                    width: 14em;
+                    max-height: 14rem;
+                    font-family: Lexenca-Deca;
+                }
+    
+                #button_three {
+                    color: $container_three_color;
+                    margin-top: 27%;
+    
+                    &:active {
+                        background-color: $container_three_color;
+                        color: $paragraph_color;
+                    }
+                }
+            }
+        }
+    
+        button {
+            padding: 0.9em;
+            border-radius: 1.5em;
+            border: none;
+            text-align: center;
+            background-color: $heading_buttons_backgroundcolor;
+            width: 70%;
+            cursor: pointer;
+            font-family: Lexenca-Deca;
+    
+            &:active {
+                border: 2px solid #{$heading_buttons_backgroundcolor};
+                color: #{$paragraph_color};
+            }
+        }
+    
+        header, footer {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: $min_width) and (max-width: $max_width) {
+        body {
+            background-color: hsl(0deg, 0%, 95%);
+          }
+          body .maincontainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 115%;
+            align-items: center;
+          }
+          body .maincontainer .container_one, body .maincontainer .container_two, body .maincontainer .container_three {
+            width: 100%;
+            padding: 1.9em;
+          }
+          body .maincontainer .container_one {
+            background-color: hsl(31deg, 77%, 52%);
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+          }
+          body .maincontainer .container_one h1 {
+            color: hsl(0deg, 0%, 95%);
+            margin-bottom: 20%;
+            font-family: Big_Shoulders_Display;
+            font-size: 2rem;
+          }
+          body .maincontainer .container_one p {
+            color: hsla(0deg, 0%, 100%, 0.75);
+            line-height: 1.5;
+            min-height: 5rem;
+            width: 13em;
+            max-height: 15rem;
+            font-family: Lexenca-Deca;
+          }
+          body .maincontainer .container_one #button_one {
+            color: hsl(31deg, 77%, 52%);
+            margin-top: 15%;
+          }
+          body .maincontainer .container_one #button_one:active {
+            background-color: hsl(31deg, 77%, 52%);
+            color: hsla(0deg, 0%, 100%, 0.75);
+          }
+          body .maincontainer .container_two {
+            background-color: hsl(184deg, 100%, 22%);
+          }
+          body .maincontainer .container_two h1 {
+            color: hsl(0deg, 0%, 95%);
+            margin-bottom: 20%;
+            font-family: Big_Shoulders_Display;
+            font-size: 2rem;
+          }
+          body .maincontainer .container_two p {
+            color: hsla(0deg, 0%, 100%, 0.75);
+            line-height: 1.5;
+            min-height: 5rem;
+            width: 13em;
+            max-height: 15rem;
+            font-family: Lexenca-Deca;
+          }
+          body .maincontainer .container_two #button_two {
+            color: hsl(184deg, 100%, 22%);
+            margin-top: 15%;
+          }
+          body .maincontainer .container_two #button_two:active {
+            background-color: hsl(184deg, 100%, 22%);
+            color: hsla(0deg, 0%, 100%, 0.75);
+          }
+          body .maincontainer .container_three {
+            background-color: hsl(179deg, 100%, 13%);
+            border-bottom-left-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+          }
+          body .maincontainer .container_three h1 {
+            color: hsl(0deg, 0%, 95%);
+            margin-bottom: 20%;
+            font-family: Big_Shoulders_Display;
+            font-size: 2rem;
+          }
+          body .maincontainer .container_three p {
+            color: hsla(0deg, 0%, 100%, 0.75);
+            line-height: 1.5;
+            min-height: 5rem;
+            width: 14em;
+            max-height: 14rem;
+            font-family: Lexenca-Deca;
+          }
+          body .maincontainer .container_three #button_three {
+            color: hsl(179deg, 100%, 13%);
+            margin-top: 12%;
+          }
+          body .maincontainer .container_three #button_three:active {
+            background-color: hsl(179deg, 100%, 13%);
+            color: hsla(0deg, 0%, 100%, 0.75);
+          }
+          body button {
+            padding: 0.9em;
+            border-radius: 1.5em;
+            border: none;
+            text-align: center;
+            background-color: hsl(0deg, 0%, 95%);
+            width: 45%;
+            cursor: pointer;
+            font-family: Lexenca-Deca;
+          }
+          body button:active {
+            border: 2px solid hsl(0deg, 0%, 95%);
+            color: hsla(0deg, 0%, 100%, 0.75);
+          }
+          body header, body footer {
+            display: none;
+          
+    }
+    }
+}
