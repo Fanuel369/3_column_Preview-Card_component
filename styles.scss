@@ -19,13 +19,13 @@ $max_width: 1000px;
 
 body {
     background-color: $heading_buttons_backgroundcolor;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
     .maincontainer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         display: flex;
         flex-direction: row;
 
