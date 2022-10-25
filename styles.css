@@ -232,7 +232,7 @@ body header, body footer {
     display: none;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 1000px) and (min-width: 375px) and (max-width: 1000px) {
+@media screen and (min-width: 200px) and (max-width: 1000px) and (min-width: 375px) and (max-width: 1000px) {
   body {
     background-color: hsl(0deg, 0%, 95%);
   }
